@@ -1,14 +1,5 @@
 <template>
   <footer>
-    <div class="copyright">
-      <n-text class="description" v-html="packageJson.description" />
-      <n-text
-        class="author"
-        :depth="3"
-        v-html="packageJson.author"
-        @click="jumpLink(packageJson.github)"
-      />
-    </div>
     <n-text
       v-if="icp"
       :depth="3"
